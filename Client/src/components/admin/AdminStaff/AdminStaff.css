@@ -1,0 +1,78 @@
+.add_staff_member_button_container {
+  position: absolute;
+  bottom: 10vh;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 85%;
+}
+
+.add_staff_member_button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 56px;
+  margin-top: 10px;
+  background: rgb(122, 172, 1);
+  border-radius: 4px;
+  color: #ffffff;
+  font: 400 13.3333px Arial;
+  font-size: 2vh;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-align: center;
+  transition: background 0.2s ease-in-out;
+  border: 0;
+  cursor: pointer;
+}
+
+.errorsContainer > .errorMessage {
+  position: absolute;
+  top: 0;
+  bottom: 25%;
+  left: 0;
+  right: 0;
+  padding-bottom: 0 !important;
+}
+
+.admin_add_staff_dropdown_placeholder_no_time::before {
+  background: #fff;
+  position: absolute;
+  color: #fff;
+  content: "*****************************************";
+}
+
+.admin_add_staff_dropdown_placeholder_no_time::after {
+  position: absolute;
+  left: 1.5rem;
+  color: rgb(122, 122, 122);
+  content: "Staff member assigned role";
+}
+
+.admin_individual_selected_employee_contents {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0 !important;
+}
+
+@media only screen and (min-width: 1200px) {
+  .add_staff_member_button {
+    font-size: 1.5vh;
+  }
+
+  .add_staff_member_button_container {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-height: 950px) {
+  .add_staff_member_button_container {
+    bottom: 5vh;
+  }
+}
